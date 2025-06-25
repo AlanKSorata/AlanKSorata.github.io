@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog on AlanKSorata</title>
+        <link>https://alanksorata.github.io/tags/blog/</link>
+        <description>Recent content in Blog on AlanKSorata</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>AlanKSorata</copyright>
+        <lastBuildDate>Tue, 24 Jun 2025 21:51:43 +0800</lastBuildDate><atom:link href="https://alanksorata.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Blog Build</title>
+        <link>https://alanksorata.github.io/p/blog-build/</link>
+        <pubDate>Tue, 24 Jun 2025 21:51:43 +0800</pubDate>
+        
+        <guid>https://alanksorata.github.io/p/blog-build/</guid>
+        <description>&lt;img src="https://alanksorata.github.io/p/blog-build/index.jpg" alt="Featured image of post Blog Build" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
