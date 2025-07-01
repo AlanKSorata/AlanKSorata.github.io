@@ -876,7 +876,7 @@
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">2 个页面</h3>
+                <h3 class="section-count">1 个页面</h3>
                 <h1 class="section-term">Categories</h1>
                 
             </div>
@@ -893,26 +893,6 @@
                 <time datetime='2025-06-24T21:51:43&#43;08:00'>2025-06-24</time>
             </footer>
         </div>
-    </a>
-</article>
-        
-            <article>
-    <a href="/categories/test/">
-        <div class="article-details">
-            <h2 class="article-title">Test</h2>
-            <footer class="article-time">
-                <time datetime='0001-01-01T00:00:00Z'>0001-01-01</time>
-            </footer>
-        </div>
-            <div class="article-image">
-                <img src="/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash_hu_30cc804daec7a86b.jpg" 
-                        width="120"
-                        height="120" 
-                        alt="Test"
-                        loading="lazy">
-                
-            </div>
-        
     </a>
 </article>
         
@@ -956,6 +936,37 @@
   particlesJS.load('particles-js', "https://alanksorata.github.io/background/particlesjs-config.json", function() {
     console.log('particles.js loaded - callback');
   });
+  
+  
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
 </script>
 
 <style>
@@ -966,6 +977,17 @@
     width: 100%;
     z-index: -1;
   }
+  
+  #backTopBtn {
+		display: none;
+		position: fixed;
+		bottom: 30px;
+		z-index: 99;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		background-image: url(https://alanksorata.github.io/icons/backTop.svg);
+	}
 </style>
 
     </body>
